@@ -1,0 +1,18 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Start main block -->
+{% block main %} {% if book_list %}
+
+<!-- Display books -->
+{% for book in book_list %}
+<a href="{{ book.get_absolute_url }}"> {{ book.title }} </a>
+{% endfor %}
+
+<!-- No book found -->
+{% else %}
+<p>No book found</p>
+{% endif %}
+
+<!-- End main block -->
+{% endblock %}

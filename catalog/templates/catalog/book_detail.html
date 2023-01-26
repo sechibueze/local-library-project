@@ -1,0 +1,10 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Start main block -->
+{% block main %} {{ book.title }}
+<p><strong>Summary:</strong> {{ book.summary }}</p>
+<p><strong>ISBN:</strong> {{ book.isbn }}</p>
+<p><strong>Language:</strong> {{ book.language }}</p>
+<!-- End main block -->
+{% endblock %}
