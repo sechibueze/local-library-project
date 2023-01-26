@@ -24,7 +24,7 @@ class Book(models.Model):
         return self.title
     def get_absolute_url(self):
         """Returns the URL to access a detail record for this book."""
-        return reverse('book-detail', args=[str(self.id)])
+        return reverse('book_details', args=[str(self.id)])
 
 LOAN_STATUS = (
         ('m', 'Maintenance'),
