@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+<!-- Main page content -->
+{% block main %}
+<h1>Welcome to LocalLibrary</h1>
+
+<div>
+  <p>
+    <span>All books</span>
+    <span>{{ num_books }}</span>
+  </p>
+  <p>
+    <span>All books</span>
+    <span>{{ num_books }}</span>
+  </p>
+  <p>
+    <span>Copies</span>
+    <span>{{ num_instances }}</span>
+  </p>
+  <p>
+    <span>Copies available </span>
+    <span>{{ num_instances_available }}</span>
+  </p>
+  <p>
+    <span>Authors </span>
+    <span>{{ num_authors }}</span>
+  </p>
+</div>
+{% endblock %}
